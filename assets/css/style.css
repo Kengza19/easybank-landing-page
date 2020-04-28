@@ -1,0 +1,488 @@
+/**
+* This file is the principle css file of the page
+* @author: @Kengza
+*/
+
+/* Font-family import */
+@font-face {
+    font-family: "PublicSans-Light";
+    src: url("../fonts/PublicSans-Light.ttf");
+}
+@font-face {
+    font-family: "PublicSans-Medium";
+    src: url("../fonts/PublicSans-Medium.ttf");
+}
+@font-face {
+    font-family: "PublicSans-Regular";
+    src: url("../fonts/PublicSans-Regular.ttf");
+}
+@font-face {
+    font-family: "PublicSans-SemiBold";
+    src: url("../fonts/PublicSans-SemiBold.ttf");
+}
+
+body {
+    font-family: "PublicSans-Regular";
+    font-size: 18px;
+    color: hsl(227, 12%, 61%);
+    overflow-x: hidden;
+}
+
+/* Titles */
+h1,h2,h3,h4,h5,h6 {
+    font-family: "PublicSans-Medium";
+    font-weight: 500;
+}
+/* *********************** PAGE CONTAINER ***************************** */
+
+
+/* ===================== Header =============================*/
+
+/******************** nav */
+nav {
+    padding: 1.1rem 9rem 0rem 9rem;
+}
+nav, .nav-wrapper, .nav-container {
+    box-shadow: none;
+    height: auto;
+    line-height: normal;
+    background-color: white;
+    position: relative;
+    z-index: 6789;
+}
+nav li {
+    padding: 0 15px !important;
+}
+nav li a {
+    font-size: 0.95rem;
+    font-family: "PublicSans-Medium";
+    color: hsl(227, 12%, 61%);
+    outline: none;
+    line-height: 56px;
+    border-bottom: 4px solid transparent;
+    padding: 0;
+}
+nav li a:hover {
+    color: hsl(233, 26%, 24%);
+    background-color: transparent;
+    border-bottom: 4px solid transparent;
+    border-image: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+    border-image-slice: 1;
+}
+.l-nav{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+.nav-action {
+    align-self: stretch;
+}
+
+.nav-action a, .hinfos a, .f-action a {
+    color: white;
+    background-color:hsl(136, 65%, 51%);
+    background-image: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+    padding: 0.9rem 2.2rem;
+    font-size: 0.9rem;
+    font-family: "PublicSans-Medium";
+    border-radius: 30px;
+    transition: all 400ms ease-out;
+}
+.nav-action a:hover, .hinfos a:hover, .f-action a:hover {
+    background-position: right center;
+    background-size: 200% auto;
+}
+.logo-container img{
+    width: 95%;
+}
+
+/************************ End nav */
+
+.header-content {
+    /* margin: 4rem 8rem 4rem 9rem; */
+    padding-left: 9rem;
+    background-image: url("../images/bg-intro-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position: 535px -234px;
+    background-color: rgb(250, 250,250);
+}
+.header-infos {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    padding-bottom: 12rem;
+}
+.hinfos {
+    width: 11cm;
+    padding-top: 10rem;
+}
+.hinfos h1 {
+    font-size: 3rem;
+    color: hsl(233, 26%, 24%);
+    margin-bottom: 32px;
+    margin-top: 0 !important;
+}
+.hinfos p {
+    font-size: 1.06rem;
+    margin-bottom: 2.4rem;
+}
+.himage {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: end;
+    align-items: end;
+    position: relative;
+    width: 80%;
+}
+.himage img {
+    width: 90%;
+    position: absolute;
+    height: auto;
+    top: -329px;
+    right: -123px;
+    left: auto;
+}
+
+/**************************** End header  */
+
+
+/******************************** Why choose Easy Bank */
+.why-easybank {
+    padding: 4.5rem 9rem;
+    background-color: rgb(244,245,247);
+}
+.w_header h2, .art-header h2{
+    color: hsl(233, 26%, 24%);
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+    margin-top: 1.1rem;
+    font-family: "PublicSans-Light";
+}
+.w_header h2+div {
+    width: 9cm;
+}
+.w_header p {
+    font-size: 1.05rem;
+}
+.w_header {
+    margin-bottom: 4.2rem;
+}
+.w_content {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: center;
+}
+.w_content .itemImg img{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+} 
+.w_content .itemImg {
+    margin-bottom: 1.9rem;
+}
+.itemContent h5 {
+    color: hsl(233, 26%, 24%);
+    font-family: "PublicSans-Light";
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+}
+.itemContent p {
+    font-size: 0.9rem;
+    width: 6cm;
+    line-height: 23px;
+}
+/******************************** End Why choose Easy Bank */
+
+/******************************** Articles */
+
+.articles {
+    padding: 4.5rem 9rem;
+}
+.art-body {
+    margin-top: 2.8rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: center;
+}
+.article .art-img img {
+    width: 225px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 5px 5px 0 0;
+}
+.art-img+div {
+    margin-left: 1.5rem;
+    margin-top: 1.2rem;
+    width: 5cm;
+}
+.art-auth {
+    font-size: 0.67rem;
+}
+.art-title {
+    color: hsl(233, 26%, 24%);
+    font-family: "PublicSans-Regular";
+    font-size: 1rem;
+}
+.art-title:hover {
+    color: hsl(136, 65%, 51%);
+}
+.art-title+p {
+    font-size: 0.75rem;
+}
+
+/************************************ End articles */
+
+/************************************ Footer */
+
+footer, .page-footer {
+    background-color: rgb(45,49,78);
+}
+footer {
+    padding: 2rem 9rem 0.5rem 9rem;
+}
+footer a {
+    outline: none;
+}
+.footer-container, .activiLegacy {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.footer-container {
+    padding-bottom: 0.5rem;
+}
+.socialMedia {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.activiLegacy {
+    width: 18rem;
+}
+.activiLegacy li a {
+    color: #f5f5f5;
+    font-size: 0.9rem;
+    font-family: "PublicSans-Regular";
+}
+.activiLegacy li {
+    padding-bottom: 0.7rem;
+}
+.activiLegacy ul{
+    margin: 0;
+}
+.activiLegacy li a:hover {
+    color: hsl(136, 65%, 51%);
+}
+.logo-text {
+    fill: white;
+}
+.socialMedia p a:hover path {
+    fill: hsl(136, 65%, 51%);
+}
+.socialMedia {
+    margin-top: 2.2rem;
+}
+.f-action {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: end;
+    align-items: end;
+}
+.copy {
+    color: rgb(138,140,161);
+    font-size: 0.9rem;
+    margin-top: 1.6rem;
+    font-family: "PublicSans-Medium";
+}
+.attribution {
+    text-align: center;
+    font-size: 13px;
+    font-family: "PublicSans-Medium";
+    line-height: 20px;
+}
+.attribution a {
+    color: hsl(136, 65%, 51%);
+}
+
+
+/* Sidenav modal */
+.mdl-close {
+    position: absolute;
+    top: 15px;
+    right: 18px;
+    z-index: 111111;
+}
+
+.mdl-close button span {
+    vertical-align: super;
+}
+.mdl-close button:active{
+    background-color: white;
+}
+.mdl-close button {
+    font-size: 2.1rem;
+    font-weight: bold;
+    outline: none;
+    width: 35px;
+    height: 35px;
+    color: #424242;
+    opacity: 1;
+    line-height: 0;
+    border-radius: 50%;
+    box-shadow: 0 2px 10px 0 #a9d7f694;
+    background-color: #fff;
+    -webkit-appearance: none;
+    padding-bottom: 4px;
+    padding-right: 10px;
+    cursor: pointer;
+    float: right;
+    text-shadow: 0 1px 0 #fff;
+    border: none;
+    text-transform: none;
+    overflow: visible;
+    margin: 0;
+    text-align: center;
+    padding: 0px;
+    padding-top: 4px;
+}
+#navig-mobile {
+    width: 18rem;
+    height: auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-radius: 5px;
+    top: 18% !important;
+}
+#navig-mobile ul {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+#navig-mobile ul li {
+    line-height: 40px;
+}
+#navig-mobile li a {
+    font-size: 1rem;
+    font-family: "BeVietnam-Bold";
+    outline: none;
+}
+#navig-mobile li a:hover {
+    background-color: transparent;
+}
+/******************** Responsive */
+.nav-mobile {
+    display: none;
+}
+@media only screen and (max-width: 992px) {
+    .nav-mobile {
+        display: inline-block;
+    }
+    .nav-wrapper {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header-infos {
+        flex-flow: column-reverse wrap;
+    }
+}
+@media only screen and (max-width: 992px) {
+    .logo-container img{
+        width: 90%;
+    }
+    .nav-mobile img {
+        width: 80%;
+    }
+    nav {
+        padding: 1rem 2rem;
+    }
+    .header-content {
+        background-position:-80px -192px;
+        background-size: 178%;
+        padding-left: 2rem;
+        text-align: center;
+    }
+    .header-infos {
+        padding-bottom: 6rem;
+    }
+    .himage {
+        width: 119%;
+    }
+    .himage img {
+        width: 90%;
+        left: 1px;
+        top: -104px;
+    }
+    .hinfos {
+        padding-top: 20rem;
+        width: auto;
+        padding-right: 2rem;
+    }
+    .hinfos h1 {
+        font-size: 1.9rem;
+    }
+    .hinfos p {
+        font-size: 0.9rem;
+    }
+    .why-easybank, .articles {
+        padding: 2rem;
+        text-align: center;
+    }
+    .w_header h2 + div {
+        width: auto;
+    }
+    .w_header h2 + div p{
+        font-size: 1rem;
+    }
+    .w_content, .art-body {
+        flex-flow: column wrap;
+    }
+    .w_content .item {
+        margin-bottom: 1.4rem;
+    }
+    .article {
+        margin-bottom: 2rem;
+    }
+    .footer-container {
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+      }
+      footer {
+        padding: 2rem;
+        text-align: center;
+      }
+      .activiLegacy {
+        width: auto;
+        margin-bottom: 2rem;
+      }
+      .f-infos, .activiLegacy {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+      }
+      .socialMedia {
+        margin: 0rem;
+        width: 16rem;
+      }
+      .f-action {
+          justify-content: center;
+          align-items: center;
+      }
+
+    
+}
