@@ -414,20 +414,24 @@ footer a {
         background-size: 178%;
         padding-left: 2rem;
         text-align: center;
+        /* overflow-x: hidden; */
+        /* display: inline-block; */
     }
     .header-infos {
         padding-bottom: 6rem;
     }
     .himage {
-        width: 119%;
+        width: 100%;
+        height: auto;
     }
     .himage img {
-        width: 90%;
+        width: 100%;
         left: 1px;
         top: -104px;
+        height: auto;
     }
     .hinfos {
-        padding-top: 20rem;
+        /* padding-top: 23rem; */
         width: auto;
         padding-right: 2rem;
     }
@@ -449,6 +453,8 @@ footer a {
     }
     .w_content, .art-body {
         flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
     }
     .w_content .item {
         margin-bottom: 1.4rem;
@@ -460,29 +466,138 @@ footer a {
         flex-flow: column wrap;
         justify-content: center;
         align-items: center;
-      }
-      footer {
+    }
+    footer {
         padding: 2rem;
         text-align: center;
-      }
-      .activiLegacy {
+    }
+    .activiLegacy {
         width: auto;
         margin-bottom: 2rem;
-      }
-      .f-infos, .activiLegacy {
+    }
+    .f-infos, .activiLegacy {
         display: flex;
         flex-flow: column wrap;
         justify-content: center;
         align-items: center;
-      }
-      .socialMedia {
+    }
+    .socialMedia {
         margin: 0rem;
         width: 16rem;
-      }
-      .f-action {
-          justify-content: center;
-          align-items: center;
-      }
-
-    
+    }
+    .f-action {
+        justify-content: center;
+        align-items: center;
+    }
+    .attribution {
+        display: block;
+        text-align: center;
+    }
+    header {
+        overflow-x: hidden;
+    }
+    section {
+        overflow-x: hidden;
+    }
+}
+@media only screen and (max-width: 360px) {
+    .himage {
+        height: 180px;
+    }
+}
+@media only screen and (min-width: 361px) and (max-width: 420px) {
+    .himage {
+        height: 250px;
+    }
+    .header-content {
+        background-position: -96px -196px;
+    }
+}
+@media only screen and (min-width: 421px) and (max-width: 520px) {
+    .himage {
+        height: 300px;
+        width: 90%;
+    }
+    .header-content {
+        /* background-size: 130%; */
+        background-position: -168px -357px;
+    }
+}
+@media only screen and (min-width: 521px) and (max-width: 650px) {
+    .himage {
+        height: 440px;
+        width: 90%;
+    }
+    .header-content {
+        /* background-size: 130%; */
+        background-position: -168px -357px;
+        padding-left: 4rem;
+    }
+    .hinfos {
+        padding-right: 4rem;
+    }
+    .why-easybank {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+}
+@media only screen and (min-width: 651px) and (max-width: 767px) {
+    .himage {
+        height: 440px;
+        width: 60%;
+    }
+    .header-content {
+        /* background-size: 130%; */
+        background-position: -168px -514px;
+        padding-left: 5rem;
+    }
+    .hinfos {
+        padding-right: 5rem;
+    }
+    .why-easybank {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+    .w_content, .art-body {
+        flex-flow: row wrap;
+        align-items: flex-start;
+    }
+    .article, .w_content .item {
+        padding: 1rem;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .himage {
+        height: 600px;
+        width: 55%;
+    }
+    .header-content {
+        /* background-size: 130%; */
+        background-position: -168px -846px;
+        padding-left: 6rem;
+    }
+    .hinfos {
+        padding-right: 6rem;
+    }
+    .why-easybank {
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
+    .w_content, .art-body {
+        flex-flow: row wrap;
+        align-items: flex-start;
+    }
+    .article, .w_content .item {
+        padding: 1rem;
+    }
+}
+@media only screen and (min-width: 993px) and (max-width: 1224px) {
+    .w_content, .art-body {
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+    .article, .w_content .item {
+        padding: 1rem;
+    }
 }
