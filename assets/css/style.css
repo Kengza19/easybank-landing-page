@@ -371,15 +371,18 @@ footer a {
     align-items: center;
 }
 #navig-mobile ul li {
-    line-height: 40px;
+    
 }
 #navig-mobile li a {
     font-size: 1rem;
-    font-family: "BeVietnam-Bold";
+    font-family: "PublicSans-Regular";
     outline: none;
+    line-height: 40px !important;
+    border: none;
 }
 #navig-mobile li a:hover {
     background-color: transparent;
+    border: none;
 }
 /******************** Responsive */
 .nav-mobile {
